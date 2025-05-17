@@ -1,4 +1,4 @@
-# farmer-life
+# Farmer-Ads Classification Project
 
 This data was collected from text ads found on twelve websites that deal with various farm animal related topics.  Information from the ad creative and the ad landing page is included.  The binary labels are based on whether or not the content owner approves of the ad.
 
