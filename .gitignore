@@ -1,66 +1,27 @@
-# Byte-compiled / optimized / DLL files
+# Python Files
 __pycache__/
 *.py[cod]
-*.pyo
-*.pyd
-*.so
+*.ipynb_checkpoints/
 
-# Virtual environment directories
+# Environment Files
+.env
 .venv/
-env/
-venv/
-ENV/
 *.env
 *.venv
 
-# Python package directories
-*.egg
-*.egg-info/
-dist/
-build/
-*.wheel
-
-# Jupyter Notebook checkpoints
-.ipynb_checkpoints
-
-# Keras/TensorFlow model files
-*.h5
-*.hdf5
-*.ckpt
-*.pb
-*.tflite
-
-# Logs and debug files
-logs/
-*.log
-*.out
-*.err
-
-# Large datasets and outputs
-data/
-results/
-*.csv
-*.tsv
-*.json
-*.npz
-*.npy
-*.pkl
-*.sqlite3
-
-# TensorBoard logs
-logs/
-events.out.tfevents.*
-
-# Temporary files
-*.tmp
-*.swp
+# OS Generated Files
 .DS_Store
+Thumbs.db
 
-# IDEs and text editor settings
-.vscode/
+# PyCharm
 .idea/
-*.sublime-workspace
-*.sublime-project
 
-# IntelliJ IDEA / PyCharm
-.idea/
+# Model Files
+models/*.h5
+models/*.hdf5
+models/*.ckpt
+
+# Data Files
+data/*.csv
+data/*.txt
+data/*.svmlight
