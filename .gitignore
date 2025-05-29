@@ -25,3 +25,9 @@ models/*.ckpt
 data/*.csv
 data/*.txt
 data/*.svmlight
+
+# Result files
+results/
+help/
+logs/
+my-finetuned-bert/

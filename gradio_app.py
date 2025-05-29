@@ -1,6 +1,8 @@
 import gradio as gr
 import torch
 from transformers import BertForSequenceClassification, BertTokenizer
+from tensorflow.keras.models import load_model
+from gensim.models import Word2Vec
 
 # Modelle laden
 models = {
@@ -8,9 +10,14 @@ models = {
         "model": BertForSequenceClassification.from_pretrained("my-finetuned-bert"),
         "tokenizer": BertTokenizer.from_pretrained("my-finetuned-bert")
     },
-    "Modell 2 (BERT cased)": {
-        "model": BertForSequenceClassification.from_pretrained("bert-base-cased", num_labels=2),
-        "tokenizer": BertTokenizer.from_pretrained("bert-base-cased")
+    "Modell 2 (Word2Vec)": {
+        "w2v_model": Word2Vec.load("models/word2vec.model")
+    },
+    "Modell 3 (CNN)": {
+        "cnn_model": load_model("models/cnn_word2vec.h5")
+    },
+    "Modell 4 (LSTM)": {
+        "lstm_model": load_model("models/lstm_word2vec.h5")
     }
 }
 
