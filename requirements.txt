@@ -1,1 +1,11 @@
-Which dependencies are needed?
+#python==3.11.*
+tensorflow==2.15.0
+keras==3.1.0
+numpy==1.26.4
+pandas==2.2.2
+matplotlib
+seaborn
+scikit-learn
+nltk
+gensim
+transformers
